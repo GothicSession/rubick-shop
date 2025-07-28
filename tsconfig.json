@@ -19,7 +19,7 @@
       "@app/shared": ["src/app/shared/index.ts"],
       "@app/pages": ["src/app/pages/index.ts"],
       "@app/ui": ["src/app/ui/index.ts"],
-    }
+      "@app/features": ["src/app/features/index.ts"]}
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

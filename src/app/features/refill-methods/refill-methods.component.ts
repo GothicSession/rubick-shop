@@ -2,14 +2,14 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {CardComponent} from '@app/ui';
 
 @Component({
-  selector: 'app-fill-account',
+  selector: 'app-refill-methods',
   standalone: true,
-  templateUrl: './fill-account.component.html',
-  styleUrl: './fill-account.component.scss',
+  templateUrl: './refill-methods.component.html',
+  styleUrl: './refill-methods.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     CardComponent
   ]
 })
-export class FillAccountComponent {
+export class RefillMethodsComponent {
 }

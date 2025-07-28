@@ -1,5 +1,17 @@
-.card-container {
-  &.card-title {
+.card {
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &-title {
     font-size: 20px;
+    color: var(--color-white);
+  }
+
+  &-description {
+    font-size: 14px;
+    color: var(--color-secondary);
   }
 }
