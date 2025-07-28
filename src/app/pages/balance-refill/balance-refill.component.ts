@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {FillAccountComponent, RefillMethodsComponent, RefillSumComponent} from '@app/features';
-import {CardProcessComponent, CardRedirectComponent, CardRequirementsComponent} from '@app/ui';
+import {CardProcessComponent, CardRedirectComponent, CardRequirementsComponent, LandingBlocksComponent} from '@app/ui';
 
 @Component({
   selector: 'app-balance-refill',
@@ -14,7 +14,8 @@ import {CardProcessComponent, CardRedirectComponent, CardRequirementsComponent} 
     RefillSumComponent,
     CardProcessComponent,
     CardRequirementsComponent,
-    CardRedirectComponent
+    CardRedirectComponent,
+    LandingBlocksComponent
   ]
 })
 export class BalanceRefillComponent {

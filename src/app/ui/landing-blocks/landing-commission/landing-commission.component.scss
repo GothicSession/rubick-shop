@@ -1,4 +1,29 @@
-:host {
+@use "../landing-blocks.component";
+
+.commission {
+  position: relative;
+  background: url("../../../../assets/images/landing-cards/first-card.svg");
   width: 168px;
   height: 90px;
+
+  &__title {
+    position: absolute;
+    top: 10px;
+    transform: rotate(358deg);
+    left: 9px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: -9px;
+    top: -14px;
+    transform: rotate(7deg);
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 10px;
+    transform: rotate(358deg);
+    left: 16px;
+  }
 }

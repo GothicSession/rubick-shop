@@ -1,0 +1,50 @@
+@use "../landing-blocks.component";
+
+.refill {
+  width: 168px;
+  height: 90px;
+  background: url("../../../../assets/images/landing-cards/second-card.svg");
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    right: 8px;
+    top: -8px;
+    transform: rotate(-1deg);
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 9px;
+
+    .refill__title {
+      transform: rotate(358deg);
+
+      &--bottom {
+        margin: 2px 0 0  5px;
+      }
+    }
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+
+    &--top {
+      margin-left: 44px;
+    }
+
+    &--commission {
+      margin-left: -8px;
+    }
+
+    &--bottom {
+      margin-left: 16px;
+      margin-bottom: -2px;
+    }
+  }
+}

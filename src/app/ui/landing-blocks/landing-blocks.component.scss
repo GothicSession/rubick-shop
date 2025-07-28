@@ -1,0 +1,37 @@
+.landing-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.landing-card {
+  &__title{
+    font-size: 15px;
+    line-height: 15px;
+    color: var(--color-landing-title);
+    font-weight: 600;
+    letter-spacing: 0.7px;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.7px;
+    font-family: 'Riffic Book', sans-serif;
+    color: var(--color-landing-title);
+
+    &--bottom {
+      padding-left: 24px;
+    }
+  }
+
+  &__icon {
+    font-weight: 600;
+    font-size: 48px;
+    background: var(--color-radial-active);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}

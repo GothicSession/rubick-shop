@@ -1,0 +1,53 @@
+@use "../landing-blocks.component";
+
+.country {
+  width: 168px;
+  height: 90px;
+  background: url("../../../../assets/images/landing-cards/third-card.svg");
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    right: 6px;
+    top: -6px;
+    transform: rotate(-1deg);
+  }
+
+  &__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 9px;
+    left: 11px;
+
+    .country__title {
+      transform: rotate(358deg);
+
+      &--bottom {
+        position: absolute;
+        left: 48px;
+        top: 11px;
+        transform: rotate(355deg);
+      }
+    }
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+
+    &--top {
+      margin-left: -6px;
+    }
+
+    &--commission {
+      margin-left: 58px;
+    }
+
+    &--bottom {
+      margin-left: 18px;
+      margin-bottom: -2px;
+    }
+  }
+}

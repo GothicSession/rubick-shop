@@ -7,3 +7,4 @@ export * from './card-process/card-process.component';
 export * from './card-requirements/card-requirements.component';
 export * from './card-redirect/card-redirect.component';
 export * from './fill-btn/fill-btn.component';
+export * from './landing-blocks/landing-blocks.component';
