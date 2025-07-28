@@ -4,3 +4,10 @@
   gap: 10px;
   flex-direction: column;
 }
+
+.info-cards {
+  display: grid;
+  grid-template-columns: minmax(355px, 1fr) minmax(335px, 1fr);
+  gap: 12px;
+  margin-top: 100px;
+}

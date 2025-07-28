@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import {CardComponent, InputComponent, PaymentCardComponent, PaymentCardsListComponent} from '@app/ui';
+import {CardComponent, PaymentCardsListComponent} from '@app/ui';
 
 @Component({
   selector: 'app-refill-methods',
@@ -9,7 +9,6 @@ import {CardComponent, InputComponent, PaymentCardComponent, PaymentCardsListCom
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
     CardComponent,
-    PaymentCardComponent,
     PaymentCardsListComponent
   ]
 })

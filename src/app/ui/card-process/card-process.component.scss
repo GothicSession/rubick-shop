@@ -1,0 +1,17 @@
+:host {
+  padding: 9px 15px;
+  display: grid;
+  background-color: var(--card-background-color);
+  color: var(--color-secondary);
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: -0.3px;
+}
+
+.card-title {
+  font-size: 14px;
+  color: var(--color-secondary);
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 16px;
+}

@@ -16,3 +16,15 @@ app-root {
   width: 100%;
   display: block;
 }
+
+a {
+  background: var(--color-radial-active);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #EFFB63;
+  cursor: pointer;
+}
+
