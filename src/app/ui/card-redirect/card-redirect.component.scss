@@ -1,0 +1,12 @@
+:host {
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+  background-color: var(--card-background-color);
+  grid-template-columns: minmax(247px, 1fr) minmax(410px, 1fr);
+  color: var(--color-secondary);
+  line-height: 17px;
+  font-size: 14px;
+  align-items: center;
+  letter-spacing: -0.2px;
+}

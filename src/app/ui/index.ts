@@ -5,3 +5,5 @@ export * from './payment-cards-list/payment-cards-list.component';
 export * from './slider/slider.component';
 export * from './card-process/card-process.component';
 export * from './card-requirements/card-requirements.component';
+export * from './card-redirect/card-redirect.component';
+export * from './fill-btn/fill-btn.component';
