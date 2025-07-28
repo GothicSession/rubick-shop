@@ -86,7 +86,8 @@
               }
             ],
             "styles": [
-              "src/app/styles/index.scss"
+              "src/app/styles/index.scss",
+              "src/app/styles/typography/_typography.scss"
             ]
           }
         }
