@@ -5,6 +5,12 @@ import {Routes} from '@app/shared';
 export const appRoutes: Route[] = [
   {
     path: Routes.MAIN,
-    component: MainLayoutComponent
+    component: MainLayoutComponent,
+    children: [
+      {
+        path: Routes.MAIN,
+        loadComponent: async () => import('@app/pages').then(m => m.BalanceRefillComponent)
+      }
+    ]
   }
 ];
