@@ -1,0 +1,11 @@
+.right-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+
+  &__text {
+    color: var(--color-secondary);
+  }
+}

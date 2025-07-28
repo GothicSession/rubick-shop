@@ -1,7 +1,7 @@
 :host {
   padding: 15px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
   background-color: var(--card-background-color);
   gap: 15px;
+  grid-template-columns: 1fr minmax(410px, 1fr);
 }

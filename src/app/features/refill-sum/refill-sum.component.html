@@ -7,4 +7,19 @@
       Сумма пополнения должна быть кратна 178р
     </span>
   </div>
+  <div class="card-input">
+    <app-input [rightButton]="rightBtn" [title]="'Ваша Сумма'" [formControl]="refillGroup.controls.refillControl" />
+  </div>
 </app-card>
+
+<ng-template #rightBtn>
+  <div class="right-btn">
+    <span class="right-btn__text">
+      RUB
+    </span>
+    <!-- TODO: Вынести в либу, импортировать при сборке приложения  -->
+    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 -5.24537e-07L12 0L6 6L0 -5.24537e-07Z" fill="#868686"/>
+    </svg>
+  </div>
+</ng-template>

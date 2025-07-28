@@ -1,0 +1,16 @@
+@if (title) {
+  <span class="input-title">{{ title }}</span>
+}
+<input
+  [placeholder]="placeholder"
+  [value]="value()"
+  [disabled]="disabled()"
+  (input)="handleInput($event)"
+  (blur)="handleBlur()"
+/>
+@if (rightButton) {
+  <div class="right-btn__container">
+    <ng-container *ngTemplateOutlet="rightButton"></ng-container>
+  </div>
+}
+
