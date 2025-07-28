@@ -13,6 +13,7 @@ input {
   outline: none;
   border: none;
   font-family: 'Riffic', sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .input {
@@ -22,6 +23,8 @@ input {
     position: absolute;
     left: 15px;
     top: -5px;
+    line-height: 12px;
+    letter-spacing: 0.4px;
   }
 }
 

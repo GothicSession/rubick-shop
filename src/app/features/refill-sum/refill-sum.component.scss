@@ -7,5 +7,12 @@
 
   &__text {
     color: var(--color-secondary);
+    letter-spacing: -0.6px;
   }
+}
+
+.card-input__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

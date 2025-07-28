@@ -8,10 +8,13 @@
   &-title {
     font-size: 20px;
     color: var(--color-white);
+    letter-spacing: -0.3px;
   }
 
   &-description {
     font-size: 14px;
+    line-height: 17px;
     color: var(--color-secondary);
+    letter-spacing: -0.2px;
   }
 }

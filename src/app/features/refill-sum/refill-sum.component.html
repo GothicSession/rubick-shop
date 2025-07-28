@@ -1,14 +1,17 @@
 <app-card>
   <div class="card-info">
       <span class="card-title">
-        Сумма пополнения
+        Сумма Пополнения
       </span>
     <span class="card-description">
       Сумма пополнения должна быть кратна 178р
     </span>
   </div>
   <div class="card-input">
-    <app-input [rightButton]="rightBtn" [title]="'Ваша Сумма'" [formControl]="refillGroup.controls.refillControl" />
+    <div class="card-input__content">
+      <app-input [rightButton]="rightBtn" [title]="'Ваша Сумма'" [formControl]="refillGroup.controls.refillControl" />
+      <app-slider />
+    </div>
   </div>
 </app-card>
 

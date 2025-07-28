@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {CardComponent, InputComponent} from '@app/ui';
+import {CardComponent, InputComponent, SliderComponent} from '@app/ui';
 import {FormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
 
 @Component({
@@ -11,7 +11,8 @@ import {FormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
   imports: [
     CardComponent,
     InputComponent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SliderComponent
   ]
 })
 export class RefillSumComponent {
