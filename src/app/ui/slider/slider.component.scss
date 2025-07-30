@@ -29,9 +29,9 @@
       color: var(--color-white);
       position: absolute;
       white-space: nowrap;
-      left: 8px;
+      left: 6px;
       top: -18px;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.4px;
     }
 
     &__left-border {
@@ -54,6 +54,8 @@
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      user-select: none;
+      touch-action: none;
     }
 
     &--active {

@@ -5,10 +5,12 @@
   height: 90px;
   background: url("../../../../assets/images/landing-cards/second-card.svg");
   position: relative;
+  margin-left: -3px;
+  margin-right: 2px;
 
   &__icon {
     position: absolute;
-    right: 8px;
+    right: 7px;
     top: -8px;
     transform: rotate(-1deg);
   }
@@ -21,10 +23,10 @@
     left: 9px;
 
     .refill__title {
-      transform: rotate(358deg);
+      transform: rotate(357deg);
 
       &--bottom {
-        margin: 2px 0 0  5px;
+        margin: 2px 0 0 7px;
       }
     }
   }
@@ -35,7 +37,8 @@
     left: 16px;
 
     &--top {
-      margin-left: 44px;
+      margin-left: 47px;
+      margin-bottom: 3px;
     }
 
     &--commission {
@@ -43,8 +46,8 @@
     }
 
     &--bottom {
-      margin-left: 16px;
-      margin-bottom: -2px;
+      margin-left: 19px;
+      margin-bottom: -3px;
     }
   }
 }

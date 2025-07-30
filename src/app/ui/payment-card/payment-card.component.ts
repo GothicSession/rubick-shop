@@ -10,4 +10,7 @@ import {ChangeDetectionStrategy, Component, Input} from '@angular/core';
 export class PaymentCardComponent {
   @Input()
   cardTitleText: string = 'Lorum Ipsum';
+
+  @Input()
+  isActive = false;
 }

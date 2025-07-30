@@ -16,4 +16,9 @@ export class PaymentCardsListComponent {
   cardsListLength: number = 6;
 
   protected cardsList = new Array(this.cardsListLength);
+  protected activeIndex: number | null = null;
+
+  onCardClick(index: number): void {
+    this.activeIndex = index;
+  }
 }

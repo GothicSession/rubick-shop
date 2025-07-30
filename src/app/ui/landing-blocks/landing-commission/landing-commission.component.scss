@@ -14,10 +14,11 @@
   }
 
   &__icon {
+    letter-spacing: 1px;
     position: absolute;
     right: -9px;
-    top: -14px;
-    transform: rotate(7deg);
+    top: -13px;
+    transform: rotate(8deg);
   }
 
   &__description {

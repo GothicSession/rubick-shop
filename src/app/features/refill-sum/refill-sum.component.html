@@ -16,13 +16,35 @@
 </app-card>
 
 <ng-template #rightBtn>
-  <div class="right-btn">
-    <span class="right-btn__text">
-      RUB
-    </span>
-    <!-- TODO: Вынести в либу, импортировать при сборке приложения  -->
-    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 -5.24537e-07L12 0L6 6L0 -5.24537e-07Z" fill="#868686"/>
-    </svg>
+  <div class="content"
+       (appClickOutside)="closePopover()">
+
+    <div class="right-btn"
+         (click)="changePopoverActivity()"
+         [class.active]="isActivePopover">
+      <span class="right-btn__text">{{ activeCurrency }}</span>
+      <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0L12 0L6 6L0 0Z" fill="#868686"/>
+      </svg>
+    </div>
+
+    <div class="popover" [class.visible]="isActivePopover">
+      @for (currency of currenciesList; track currency) {
+        <div class="currency"
+             (click)="changeCurrency(currency)"
+             [class.active]="currency === activeCurrency">
+          {{ currency }}
+          @if (currency === activeCurrency) {
+            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.583 8L12 2.667 9.778 0 4.583 5.167 2 2 0 4.667 4.583 8Z"
+                    fill="white"/>
+            </svg>
+          }
+        </div>
+      }
+    </div>
   </div>
 </ng-template>
+

@@ -25,8 +25,8 @@
 
       &--bottom {
         position: absolute;
-        left: 48px;
-        top: 11px;
+        left: 47px;
+        top: 10px;
         transform: rotate(355deg);
       }
     }
@@ -38,11 +38,14 @@
     left: 16px;
 
     &--top {
-      margin-left: -6px;
+      margin-left: -5px;
+      margin-bottom: 1px;
+      transform: rotate(1deg);
+      letter-spacing: 0.6px;
     }
 
     &--commission {
-      margin-left: 58px;
+      margin-left: 59px;
     }
 
     &--bottom {

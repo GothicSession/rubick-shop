@@ -23,7 +23,8 @@
     left: 13px;
 
     .safety__title {
-      transform: rotate(361deg);
+      transform: rotate(362deg);
+      margin-left: 1px;
 
       &--bottom {
         position: absolute;
@@ -41,16 +42,19 @@
     &--top {
       margin-left: 15px;
       transform: rotate(363deg);
+      letter-spacing: 0.6px;
     }
 
     &--commission {
       margin-left: -5px;
+      margin-bottom: -3px;
     }
 
     &--bottom {
-      margin-left: 88px;
-      margin-bottom: -3px;
+      margin-left: 86px;
+      margin-bottom: -2px;
       transform: rotate(355deg);
+      letter-spacing: 1.3px;
     }
   }
 }

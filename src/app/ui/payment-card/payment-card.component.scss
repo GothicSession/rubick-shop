@@ -1,13 +1,34 @@
-:host {
-  padding: 8px 22px;
+.card {
   display: flex;
   background-color: var(--card-background-color-secondary);
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 60px;
+  width: 130px;
+  user-select: none;
+
+  &:hover {
+    background-color: var(--background-color);
+  }
+
+  &.active {
+    background-color: var(--card-background-color);
+    border: 4px solid var(--card-background-color-secondary);
+    cursor: default;
+
+    .card-title {
+      color: #BCFB63;
+    }
+  }
 }
 
 .card-title {
   font-size: 14px;
   line-height: 14px;
-  color: var(--color-secondary)
+  color: var(--color-secondary);
+  letter-spacing: 0.4px;
+  text-wrap: nowrap;
 }

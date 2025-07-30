@@ -1,13 +1,57 @@
+.content {
+  position: relative;
+  width: 48px;
+}
+
 .right-btn {
   display: flex;
   flex-direction: row;
   gap: 6px;
   align-items: center;
   cursor: pointer;
+  color: var(--color-secondary);
+  letter-spacing: -0.4px;
+  user-select: none;
 
-  &__text {
-    color: var(--color-secondary);
-    letter-spacing: -0.6px;
+  &:hover, &.active {
+      color: var(--color-white);
+
+    svg {
+      * {
+        fill: var(--color-white);
+      }
+    }
+  }
+}
+
+.popover {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 32px;
+  left: -13px;
+  visibility: hidden;
+
+  &.visible {
+    visibility: visible;
+  }
+
+  .currency {
+    color: var(--color-white);
+    width: 75px;
+    height: 44px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+    border: 2px solid var(--background-color);
+    background-color: var(--color-popover-option);
+    cursor: pointer;
+    gap: 6px;
+
+    &.active {
+      background-color: var(--color-popover-option-active);
+    }
   }
 }
 
